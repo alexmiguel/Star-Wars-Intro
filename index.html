@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>aniframer_plugin</title>
+        <link rel="shortcut icon" href="images/favicon.png">
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/jquery-3.1.1.min.js"></script>
+    </head>
+    <body>
+
+        <div class="center_container roundCorners boxShadow">
+            <audio id="player"></audio>
+            <p id="title">STAR WARS</p>
+            <div id="animationCaontainer">
+                <canvas id="star_wars_intro" width="960" height="400" ></canvas>
+
+                <div id="rotate-x" class="container">
+                    <div class="panel" >
+                        <div id="scrolling_text_container"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="full_container blackBox" id="animControls">
+                <img src="images/play.png" id="btPlay">
+                <img src="images/pause.png" id="btPause">
+            </div>
+            
+
+
+
+            <div id="debugBox" class="full_container blackBox"></div>
+            <div class="full_container blackBox">
+                <textarea id="introText"></textarea>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <script src="js/aniframer.js"></script>
+        <script src="js/logic.js"></script>
+    </body>
+</html>
