@@ -2,41 +2,34 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>aniframer_plugin</title>
+        <title>Star Wars intro - HTML5</title>
         <link rel="shortcut icon" href="images/favicon.png">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="js/jquery-3.1.1.min.js"></script>
+       
     </head>
     <body>
 
-        <div class="center_container roundCorners boxShadow">
-            <audio id="player"></audio>
-            <p id="title">STAR WARS</p>
-            <div id="animationCaontainer">
-                <canvas id="star_wars_intro" width="960" height="400" ></canvas>
-
-                <div id="rotate-x" class="container">
-                    <div class="panel" >
-                        <div id="scrolling_text_container"></div>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="full_container blackBox" id="animControls">
-                <img src="images/play.png" id="btPlay">
-                <img src="images/pause.png" id="btPause">
+        <div id="viewport" class="center_container boxShadow">
+            <audio id="audioplayer" preload="auto"></audio>
+            <div class="full_container">
+                <p id="title">STAR WARS</p>
             </div>
             
+            <!-- ======================================================================== -->
+            <!--       WHERE THE MAGIC HAPPENS!                                           -->
+            <!-- ======================================================================== -->
+            <div class="full_container animation_container">
+                <canvas id="star_wars_intro" ></canvas>
 
-
-
-            <div id="debugBox" class="full_container blackBox"></div>
-            <div class="full_container blackBox">
-                <textarea id="introText"></textarea>
+                <div id="rotate-x" class="perspectiveText_container">
+                    <div id="perspectiveText_base" >
+                        <div id="scrollingText_container"></div>
+                    </div>
+                </div>
             </div>
-
+    
         </div>
 
 
